@@ -2,11 +2,6 @@
   "name": "party-invitation",
   "version": "0.1.0",
   "private": true,
-  "babelMacros": {
-    "twin": {
-      "preset": "emotion"
-    }
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -48,7 +43,6 @@
     "jest": "^29.5.0",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
-    "storybook": "^7.0.18",
-    "twin.macro": "^3.3.0"
+    "storybook": "^7.0.18"
   }
 }
