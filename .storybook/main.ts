@@ -11,6 +11,7 @@ const config: StorybookConfig = {
     "@storybook/addon-interactions",
     "@storybook/addon-knobs/register",
     "@storybook/addon-docs",
+    "@storybook/addon-styling",
   ],
   framework: {
     name: "@storybook/nextjs",
@@ -19,6 +20,5 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
-  staticDirs: ["../components"],
 };
 export default config;
