@@ -22,3 +22,7 @@ export const smallInputText = () => {
 export const mediumInputText = () => {
     return <InputText size='medium' placeholder='medium'></InputText>;
 };
+
+export const largeInputText = () => {
+    return <InputText size='large' placeholder='large'></InputText>;
+};
