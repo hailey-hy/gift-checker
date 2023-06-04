@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './Button';
 
 export default {
-    title: 'component: Button',
+    title: 'Button',
     component: Button,
     tags: ['autodocs'],
 };
