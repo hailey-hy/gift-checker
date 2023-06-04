@@ -1,23 +1,24 @@
-import React from "react";
-import Button from "./Button";
+import React from 'react';
+import Button from './Button';
 
 export default {
-  title: "component: Button",
-  component: Button,
+    title: 'component: Button',
+    component: Button,
+    tags: ['autodocs'],
 };
 
 export const button = () => {
-  return <Button>BUTTON</Button>;
+    return <Button>BUTTON</Button>;
 };
 
 button.story = {
-  name: "Default",
+    name: 'Default',
 };
 
 export const mediumButton = () => {
-  return <Button size="medium">MEDIUM</Button>;
+    return <Button size='medium'>MEDIUM</Button>;
 };
 
 export const smallButton = () => {
-  return <Button size="small">SMALL</Button>;
+    return <Button size='small'>SMALL</Button>;
 };
