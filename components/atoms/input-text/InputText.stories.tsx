@@ -26,3 +26,7 @@ export const mediumInputText = () => {
 export const largeInputText = () => {
     return <InputText size='large' placeholder='large'></InputText>;
 };
+
+export const noUnderlineInputText = () => {
+    return <InputText size='medium' placeholder='no Underline' underline='false'></InputText>;
+};
