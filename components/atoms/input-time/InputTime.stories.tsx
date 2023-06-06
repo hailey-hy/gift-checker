@@ -2,7 +2,7 @@ import React from 'react';
 import InputTime from './InputTime';
 
 export default {
-    title: 'InputTime',
+    title: 'Design Systems/Atoms/InputTime',
     component: InputTime,
     tags: ['autodocs'],
 };

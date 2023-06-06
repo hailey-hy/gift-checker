@@ -1,7 +1,7 @@
 import Background from './Background';
 
 export default {
-    title: 'Background',
+    title: 'Design Systems/Atoms/Background',
     component: Background,
     tags: ['autodocs'],
 };

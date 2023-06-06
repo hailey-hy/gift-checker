@@ -1,6 +1,6 @@
 import GridPaper from './GridPaper';
 export default {
-    title: 'GridPaper',
+    title: 'Design Systems/Atoms/GridPaper',
     component: GridPaper,
     tags: ['autodocs'],
 };
