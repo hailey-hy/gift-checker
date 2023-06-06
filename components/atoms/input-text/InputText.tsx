@@ -5,6 +5,7 @@ export type InputProps = {
     name: 'host-name' | 'party-name' | 'place' | 'party-detail' | 'gift-name' | 'gift-detail';
     onChange?: (e?: React.MouseEvent<HTMLInputElement>) => void;
     underline: 'true' | 'false';
+    align: 'center' | 'left';
 };
 
 const sizes = {
@@ -14,12 +15,25 @@ const sizes = {
 };
 
 const underlines = {
-    true: 'border-b-2',
+    true: 'border-b-2 ',
     false: '',
 };
 
-const InputText = ({ size, placeholder, maxlength, name, onChange, underline }: InputProps) => {
-    const style = 'outline-0 h-8 ' + sizes[size] + underlines[underline];
+const aligns = {
+    center: 'text-center',
+    left: 'text-left',
+};
+
+const InputText = ({
+    size,
+    placeholder,
+    maxlength,
+    name,
+    onChange,
+    underline,
+    align,
+}: InputProps) => {
+    const style = 'outline-0 h-8 ' + sizes[size] + underlines[underline] + aligns[align];
     return (
         <input
             name={name}
@@ -37,6 +51,7 @@ InputText.defaultProps = {
     maxlength: 10,
     name: 'host-name',
     underline: 'true',
+    align: 'center',
 };
 
 export default InputText;
