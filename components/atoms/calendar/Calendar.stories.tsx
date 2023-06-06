@@ -1,7 +1,7 @@
 import Calendar from './Calendar';
 
 export default {
-    title: 'Calendar',
+    title: 'Design Systems/Atoms/Calendar',
     component: Calendar,
     tags: ['autodocs'],
 };

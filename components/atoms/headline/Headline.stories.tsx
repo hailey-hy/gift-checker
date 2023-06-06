@@ -1,6 +1,6 @@
 import Headline from './Headline';
 export default {
-    title: 'Headline',
+    title: 'Design Systems/Atoms/Headline',
     component: Headline,
 };
 

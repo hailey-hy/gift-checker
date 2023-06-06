@@ -2,7 +2,7 @@ import React from 'react';
 import InputText from './InputText';
 
 export default {
-    title: 'InputText',
+    title: 'Design Systems/Atoms/InputText',
     component: InputText,
     tags: ['autodocs'],
 };
