@@ -4,16 +4,22 @@ export type InputProps = {
     maxlength: number;
     name: 'host-name' | 'party-name' | 'place' | 'party-detail' | 'gift-name' | 'gift-detail';
     onChange?: (e?: React.MouseEvent<HTMLInputElement>) => void;
+    underline: 'true' | 'false';
 };
 
 const sizes = {
-    small: 'w-24',
-    medium: 'w-40',
-    large: 'w-60',
+    small: 'w-24 ',
+    medium: 'w-40 ',
+    large: 'w-60 ',
 };
 
-const InputText = ({ size, placeholder, maxlength, name, onChange }: InputProps) => {
-    const style = 'outline-0 border-b-2 h-8 ' + sizes[size];
+const underlines = {
+    true: 'border-b-2',
+    false: '',
+};
+
+const InputText = ({ size, placeholder, maxlength, name, onChange, underline }: InputProps) => {
+    const style = 'outline-0 h-8 ' + sizes[size] + underlines[underline];
     return (
         <input
             name={name}
@@ -30,6 +36,7 @@ InputText.defaultProps = {
     placeholder: 'placeholder',
     maxlength: 10,
     name: 'host-name',
+    underline: 'true',
 };
 
 export default InputText;
