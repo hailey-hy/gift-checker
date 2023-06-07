@@ -1,6 +1,6 @@
 export type InputProps = {
     placeholder: string;
-    size: 'small' | 'medium' | 'large';
+    size: 'small' | 'medium' | 'large' | 'extraLarge';
     maxlength: number;
     name: 'host-name' | 'party-name' | 'place' | 'party-detail' | 'gift-name' | 'gift-detail';
     onChange?: (e?: React.MouseEvent<HTMLInputElement>) => void;
@@ -12,6 +12,7 @@ const sizes = {
     small: 'w-24 ',
     medium: 'w-40 ',
     large: 'w-60 ',
+    extraLarge: 'w-96 ',
 };
 
 const underlines = {
