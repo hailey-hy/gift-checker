@@ -30,3 +30,7 @@ export const largeInputText = () => {
 export const noUnderlineInputText = () => {
     return <InputText size='medium' placeholder='no Underline' underline='false'></InputText>;
 };
+
+export const leftInputText = () => {
+    return <InputText size='medium' placeholder='left align' align='left'></InputText>;
+};
