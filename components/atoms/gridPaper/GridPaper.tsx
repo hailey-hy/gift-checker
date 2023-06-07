@@ -1,13 +1,24 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/react';
 
+export type gridPaperProps = {
+    children: React.ReactNode;
+};
+
 const gridPaperStyle = css(`
-width: 100%;
-height: 100%;
-background-color: #f6f6f6;
+width: 375px;
+height: 375px;
+padding: 2rem;
+@media (max-width: 375px) {
+  width: 320px;
+  height: 320px;
+  padding: 0
+}
 position: absolute;
 top: 0;
-left: 0;
+left: 0
+margin: 0
+background-color: #f6f6f6;
 background-image:
     linear-gradient(90deg, #cdcccc 0px, #cdcccc 1px, transparent 1px, transparent 99px,  transparent 100px),
     linear-gradient(#cdcccc 0px, #cdcccc 1px, transparent 1px, transparent 99px,  transparent 100px),
@@ -21,8 +32,8 @@ background-image:
   background-size:100px 100%, 100% 100px, 100% 10px, 10px 100%, 100% 100px, 100px 100%, 100px 100%, 100px 100px, 100px 100px;
 `);
 
-const GridPaper = () => {
-    return <div css={gridPaperStyle}></div>;
+const GridPaper = ({ children }: gridPaperProps) => {
+    return <div css={gridPaperStyle}>{children}</div>;
 };
 
 export default GridPaper;

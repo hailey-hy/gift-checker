@@ -6,5 +6,5 @@ export default {
 };
 
 export const gridPaper = () => {
-    return <GridPaper></GridPaper>;
+    return <GridPaper>{}</GridPaper>;
 };
