@@ -7,25 +7,25 @@ export default {
     tags: ['autodocs'],
 };
 
-export const labelsOnly = () => {
+export const labelsOnlyFlex = () => {
     return (
-        <LabelsOnly>
+        <LabelsOnly display='flex'>
             <Label>라벨</Label>
         </LabelsOnly>
     );
 };
 
-export const titleLabel = () => {
+export const titleLabelFlex = () => {
     return (
-        <LabelsOnly border='true'>
+        <LabelsOnly display='flex' border='true'>
             <Label size='large'>OO님의 기념일</Label>
         </LabelsOnly>
     );
 };
 
-export const timePlaceLabel = () => {
+export const timePlaceLabelFlex = () => {
     return (
-        <LabelsOnly border='false'>
+        <LabelsOnly display='flex' border='false'>
             <Label size='medium'>6월 27일</Label>
             <Label size='medium'>18시 00분</Label>
             <Label size='medium'>우리집</Label>
@@ -33,10 +33,20 @@ export const timePlaceLabel = () => {
     );
 };
 
-export const detailsLabel = () => {
+export const detailsLabelFlex = () => {
     return (
-        <LabelsOnly border='bottom'>
+        <LabelsOnly display='flex' border='bottom'>
             <Label size='medium'>자세한 설명이 들어갈 자리로, 최대 길이 50자</Label>
+        </LabelsOnly>
+    );
+};
+
+export const commentLabelGrid = () => {
+    return (
+        <LabelsOnly display='grid' border='bottom'>
+            <Label size='medium'>이름</Label>
+            <Label size='medium'>선물</Label>
+            <Label size='medium'>자세한 설명</Label>
         </LabelsOnly>
     );
 };
