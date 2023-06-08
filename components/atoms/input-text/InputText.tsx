@@ -21,8 +21,8 @@ const underlines = {
 };
 
 const aligns = {
-    center: 'text-center',
-    left: 'text-left',
+    center: 'text-center ',
+    left: 'text-left ',
 };
 
 const InputText = ({

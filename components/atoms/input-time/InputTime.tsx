@@ -6,7 +6,7 @@ import { TimePicker } from '@mui/x-date-pickers/TimePicker';
 
 const InputTime = () => {
     return (
-        <div className='w-52'>
+        <div className='w-42'>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DemoContainer components={['TimePicker']}>
                     <TimePicker label='시간을 입력하세요.' />

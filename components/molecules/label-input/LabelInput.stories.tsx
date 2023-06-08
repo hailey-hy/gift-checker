@@ -72,7 +72,7 @@ export const lableInputTime = () => {
 
 export const inputOnly = () => {
     return (
-        <LabelInput>
+        <LabelInput display='grid'>
             <InputText size='medium' placeholder='이름'></InputText>
             <InputText size='medium' placeholder='선물'></InputText>
             <InputText size='large' placeholder='자세한 설명'></InputText>
