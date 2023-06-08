@@ -69,3 +69,13 @@ export const lableInputTime = () => {
         </LabelInput>
     );
 };
+
+export const inputOnly = () => {
+    return (
+        <LabelInput>
+            <InputText size='medium' placeholder='이름'></InputText>
+            <InputText size='medium' placeholder='선물'></InputText>
+            <InputText size='large' placeholder='자세한 설명'></InputText>
+        </LabelInput>
+    );
+};
