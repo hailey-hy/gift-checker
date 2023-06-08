@@ -34,7 +34,8 @@ const InputText = ({
     underline,
     align,
 }: InputProps) => {
-    const style = 'outline-0 h-8 ' + sizes[size] + underlines[underline] + aligns[align];
+    const style =
+        'outline-0 h-8 bg-transparent ' + sizes[size] + underlines[underline] + aligns[align];
     return (
         <input
             name={name}
