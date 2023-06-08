@@ -11,7 +11,7 @@ const sizes = {
 };
 
 const bolds = {
-    true: 'font-bold ',
+    true: 'font-semibold ',
     false: ' ',
 };
 
