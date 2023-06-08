@@ -25,3 +25,7 @@ export const mediumLabel = () => {
 export const largeLabel = () => {
     return <Label size='large'>largeLabel</Label>;
 };
+
+export const boldLabel = () => {
+    return <Label bold='true'>boldLabel</Label>;
+};
