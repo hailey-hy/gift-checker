@@ -6,18 +6,19 @@ export type gridPaperProps = {
 };
 
 const gridPaperStyle = css(`
-width: 375px;
-height: 375px;
-padding: 2rem;
+box-sizing: border-box;
+width: 100%;
+height: 100%;
+overflow: overlay;
 @media (max-width: 375px) {
   width: 320px;
   height: 320px;
-  padding: 0
+  padding: 0;
+  margin: 0;
 }
-position: absolute;
 top: 0;
-left: 0
-margin: 0
+left: 0;
+margin: 0;
 background-color: #f6f6f6;
 background-image:
     linear-gradient(90deg, #cdcccc 0px, #cdcccc 1px, transparent 1px, transparent 99px,  transparent 100px),
