@@ -9,8 +9,10 @@ const sizes = {
 };
 
 const GridContainer = ({ children, size }: GridContainerProps) => {
-    const style = 'w-[320px] sm:w-[550px] overflow-scroll ' + sizes[size];
-    return <div className={style}>{children}</div>;
+    const style =
+        'box-border xs:w-fit sm:w-[550px] overflow-scroll justify-center m-auto mt-4 ' +
+        sizes[size];
+    return <article className={style}>{children}</article>;
 };
 
 GridContainer.defaultProps = {
