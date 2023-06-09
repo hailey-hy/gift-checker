@@ -11,7 +11,7 @@ const themes = {
 };
 
 const sizes = {
-    small: 'text-sm w-20 h-9 p-1',
+    small: 'text-sm w-20 h-9 p-1 m-1',
     medium: 'text-base w-40 h-10',
 };
 
