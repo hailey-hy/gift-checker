@@ -7,7 +7,7 @@ const colors = {
 };
 
 const Background = ({ color }: BackgroundProp) => {
-    const style = ' w-full h-full absolute top-0 left-0 ' + colors[color];
+    const style = ' w-full h-full fixed top-0 left-0 z-[-1] ' + colors[color];
     return <section className={style}></section>;
 };
 
