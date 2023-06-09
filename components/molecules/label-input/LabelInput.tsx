@@ -7,7 +7,7 @@ export type LabelInputProps = {
 };
 
 const displays = {
-    flex: 'flex flex-row items-center gap-2 sm:w-[630px] ',
+    flex: 'flex flex-row items-center gap-2 w-fit m-auto ',
     grid: 'grid gap-4 pb-2 grid-cols-1 sm:w-[630px] sm:grid-cols-custom sm:gap-8 ',
 };
 

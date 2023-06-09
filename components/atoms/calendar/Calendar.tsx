@@ -5,9 +5,9 @@ import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
 
 const Calendar = () => {
     return (
-        <div className='h-80 overflow-hidden'>
+        <div className='m-auto box-border h-80 w-[280px] p-0 xs:w-[320px]'>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
-                <DateCalendar className='h-80 overflow-hidden' />
+                <DateCalendar />
             </LocalizationProvider>
         </div>
     );

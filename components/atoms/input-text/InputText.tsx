@@ -12,7 +12,7 @@ const sizes = {
     small: 'w-24 ',
     medium: 'w-40 ',
     large: 'w-60 ',
-    extraLarge: 'w-96 ',
+    extraLarge: 'w-60 xs:w-88 sm:w-96 ',
 };
 
 const underlines = {
