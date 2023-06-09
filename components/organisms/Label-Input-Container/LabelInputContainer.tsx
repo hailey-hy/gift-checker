@@ -5,7 +5,7 @@ export type LabelInputContainerProps = {
 };
 
 const borders = {
-    true: 'rounded-xl border',
+    true: 'rounded-xl border ',
     false: '',
 };
 
