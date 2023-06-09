@@ -19,12 +19,13 @@
                 "name": "next"
             }
         ],
-        "baseUrl": ".",
+        "baseUrl": "./",
         "paths": {
             "@/*": ["./app/*"],
             "@atoms/*": ["./components/atoms/*"],
             "@molecules/*": ["./components/molecules/*"],
-            "@organisms/*": ["./components/organisms/*"]
+            "@organisms/*": ["./components/organisms/*"],
+            "@templates/*": ["./components/templates/*"]
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
