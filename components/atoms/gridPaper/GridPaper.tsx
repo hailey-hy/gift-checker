@@ -1,3 +1,5 @@
+'use client';
+/** @jsxRuntime classic */
 /** @jsx jsx */
 import { css, jsx } from '@emotion/react';
 
