@@ -1,5 +1,5 @@
+import React from 'react';
 import Background from '@atoms/background/Background';
-import HomeTemplate from './HomeTemplate';
 import Headline from '@atoms/headline/Headline';
 import Label from '@atoms/label/Label';
 import LabelInput from '@molecules/label-input/LabelInput';
@@ -11,15 +11,13 @@ import Calendar from '@atoms/calendar/Calendar';
 import InputTime from '@atoms/input-time/InputTime';
 import Button from '@atoms/button/Button';
 
-export default {
-    title: 'Design Systems/Templates/Home-Template',
-    component: HomeTemplate,
-    tags: ['autodocs'],
+export type HomeTemplateProps = {
+    children: React.ReactNode;
 };
 
-export const homeTemplate = () => {
+const HomeTemplate = () => {
     return (
-        <HomeTemplate>
+        <section className='overflow-overlay justify-center'>
             <Background></Background>
             <Headline></Headline>
             <LabelInputContainer border='true'>
@@ -60,6 +58,8 @@ export const homeTemplate = () => {
                 <Button>링크 복사</Button>
                 <Button>카카오톡 공유</Button>
             </LabelInputContainer>
-        </HomeTemplate>
+        </section>
     );
 };
+
+export default HomeTemplate;
