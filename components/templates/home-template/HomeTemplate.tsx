@@ -8,8 +8,8 @@ import GridPaper from '@atoms/gridPaper/GridPaper';
 import Calendar from '@atoms/calendar/Calendar';
 import InputTime from '@atoms/input-time/InputTime';
 import Button from '@atoms/button/Button';
-import LabelInputContainer from '@organisms/label-input-container/label-input-container';
 import GridContainer from '@organisms/grid-container/GridContainer';
+import Container from '@organisms/container/Container';
 
 export type HomeTemplateProps = {
     children: React.ReactNode;
@@ -20,7 +20,7 @@ const HomeTemplate = () => {
         <section className='overflow-overlay justify-center'>
             <Background></Background>
             <Headline></Headline>
-            <LabelInputContainer border='true'>
+            <Container border='true'>
                 <LabelInput>
                     <Label>주인공</Label>
                     <InputText placeholder='이름' size='medium' maxlength={25}></InputText>
@@ -29,13 +29,13 @@ const HomeTemplate = () => {
                     <Label>일정</Label>
                     <InputText placeholder='생일' size='medium' maxlength={25}></InputText>
                 </LabelInput>
-            </LabelInputContainer>
+            </Container>
             <GridContainer>
                 <GridPaper>
                     <Calendar></Calendar>
                 </GridPaper>
             </GridContainer>
-            <LabelInputContainer border='false'>
+            <Container border='false'>
                 <LabelInput>
                     <Label>시간</Label>
                     <InputTime></InputTime>
@@ -44,8 +44,8 @@ const HomeTemplate = () => {
                     <Label>장소</Label>
                     <InputText placeholder='우리집' size='medium' maxlength={25}></InputText>
                 </LabelInput>
-            </LabelInputContainer>
-            <LabelInputContainer border='false' margin='y'>
+            </Container>
+            <Container border='false' margin='y'>
                 <LabelInput>
                     <InputText
                         placeholder='자세한 설명을 추가해 보세요!'
@@ -53,11 +53,11 @@ const HomeTemplate = () => {
                         maxlength={50}
                     ></InputText>
                 </LabelInput>
-            </LabelInputContainer>
-            <LabelInputContainer>
+            </Container>
+            <Container>
                 <Button>링크 복사</Button>
                 <Button>카카오톡 공유</Button>
-            </LabelInputContainer>
+            </Container>
         </section>
     );
 };

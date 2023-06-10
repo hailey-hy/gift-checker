@@ -1,29 +1,29 @@
 import LabelInput from '@molecules/label-input/LabelInput';
 import Label from '@atoms/label/Label';
-import LabelInputContainer from './label-input-container';
+import Container from './Container';
 import InputText from '@atoms/input-text/InputText';
 import InputTime from '@atoms/input-time/InputTime';
 
 export default {
-    title: 'Design Systems/Organisms/LabelInputContainer',
-    component: LabelInputContainer,
+    title: 'Design Systems/Organisms/Container',
+    component: Container,
     tags: ['autodocs'],
 };
 
-export const labelInputContainer = () => {
+export const container = () => {
     return (
-        <LabelInputContainer>
+        <Container>
             <LabelInput>
                 <Label>라벨</Label>
                 <InputText placeholder='입력창'></InputText>
             </LabelInput>
-        </LabelInputContainer>
+        </Container>
     );
 };
 
-export const labelInputHostPartyContainer = () => {
+export const HostPartyContainer = () => {
     return (
-        <LabelInputContainer border='true'>
+        <Container border='true'>
             <LabelInput>
                 <Label>주인공</Label>
                 <InputText placeholder='이름' size='medium' maxlength={25}></InputText>
@@ -32,13 +32,13 @@ export const labelInputHostPartyContainer = () => {
                 <Label>일정</Label>
                 <InputText placeholder='생일' size='medium' maxlength={25}></InputText>
             </LabelInput>
-        </LabelInputContainer>
+        </Container>
     );
 };
 
-export const labelInputTimePlaceContainer = () => {
+export const TimePlaceContainer = () => {
     return (
-        <LabelInputContainer border='false'>
+        <Container border='false'>
             <LabelInput>
                 <Label>시간</Label>
                 <InputTime></InputTime>
@@ -47,6 +47,6 @@ export const labelInputTimePlaceContainer = () => {
                 <Label>장소</Label>
                 <InputText placeholder='우리집' size='medium' maxlength={25}></InputText>
             </LabelInput>
-        </LabelInputContainer>
+        </Container>
     );
 };

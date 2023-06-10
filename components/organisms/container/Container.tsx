@@ -1,4 +1,4 @@
-export type LabelInputContainerProps = {
+export type ContainerProps = {
     children: React.ReactNode;
     border: 'true' | 'false';
     margin: 'false' | 'y';
@@ -14,7 +14,7 @@ const margins = {
     y: 'my-4 ',
 };
 
-const LabelInputContainer = ({ children, border, margin }: LabelInputContainerProps) => {
+const Container = ({ children, border, margin }: ContainerProps) => {
     const style =
         'flex flex-row flex-wrap justify-center gap-3 p-1 w-fit m-auto sm:w-[630px] sm:p-4 ' +
         borders[border] +
@@ -22,9 +22,9 @@ const LabelInputContainer = ({ children, border, margin }: LabelInputContainerPr
     return <article className={style}>{children}</article>;
 };
 
-LabelInputContainer.defaultProps = {
+Container.defaultProps = {
     border: 'false',
     margin: 'false',
 };
 
-export default LabelInputContainer;
+export default Container;
