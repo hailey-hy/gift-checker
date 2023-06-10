@@ -19,7 +19,7 @@ const LabelInputContainer = ({ children, border, margin }: LabelInputContainerPr
         'flex flex-row flex-wrap justify-center gap-3 p-1 w-fit m-auto sm:w-[630px] sm:p-4 ' +
         borders[border] +
         margins[margin];
-    return <div className={style}>{children}</div>;
+    return <article className={style}>{children}</article>;
 };
 
 LabelInputContainer.defaultProps = {

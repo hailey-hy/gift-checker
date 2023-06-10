@@ -1,6 +1,6 @@
 import LabelInput from '@molecules/label-input/LabelInput';
 import Label from '@atoms/label/Label';
-import LabelInputContainer from './LabelInputContainer';
+import LabelInputContainer from './label-input-container';
 import InputText from '@atoms/input-text/InputText';
 import InputTime from '@atoms/input-time/InputTime';
 
