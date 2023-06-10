@@ -1,28 +1,26 @@
+import React from 'react';
 import Background from '@atoms/background/Background';
-import HomeTemplate from './HomeTemplate';
 import Headline from '@atoms/headline/Headline';
 import Label from '@atoms/label/Label';
-import LabelInput from '@molecules/label-input/LabelInput';
-import LabelInputContainer from '@organisms/label-input-container/LabelInputContainer';
 import InputText from '@atoms/input-text/InputText';
-import GridContainer from '@organisms/grid-container/GridContainer';
+import LabelInput from '@molecules/label-input/LabelInput';
 import GridPaper from '@atoms/gridPaper/GridPaper';
 import Calendar from '@atoms/calendar/Calendar';
 import InputTime from '@atoms/input-time/InputTime';
 import Button from '@atoms/button/Button';
+import GridContainer from '@organisms/grid-container/GridContainer';
+import Container from '@organisms/container/Container';
 
-export default {
-    title: 'Design Systems/Templates/Home-Template',
-    component: HomeTemplate,
-    tags: ['autodocs'],
+export type HomeTemplateProps = {
+    children: React.ReactNode;
 };
 
-export const homeTemplate = () => {
+const HomeTemplate = () => {
     return (
-        <HomeTemplate>
+        <section className='overflow-overlay justify-center'>
             <Background></Background>
             <Headline></Headline>
-            <LabelInputContainer border='true'>
+            <Container border='true'>
                 <LabelInput>
                     <Label>주인공</Label>
                     <InputText placeholder='이름' size='medium' maxlength={25}></InputText>
@@ -31,13 +29,13 @@ export const homeTemplate = () => {
                     <Label>일정</Label>
                     <InputText placeholder='생일' size='medium' maxlength={25}></InputText>
                 </LabelInput>
-            </LabelInputContainer>
+            </Container>
             <GridContainer>
                 <GridPaper>
                     <Calendar></Calendar>
                 </GridPaper>
             </GridContainer>
-            <LabelInputContainer border='false'>
+            <Container border='false'>
                 <LabelInput>
                     <Label>시간</Label>
                     <InputTime></InputTime>
@@ -46,8 +44,8 @@ export const homeTemplate = () => {
                     <Label>장소</Label>
                     <InputText placeholder='우리집' size='medium' maxlength={25}></InputText>
                 </LabelInput>
-            </LabelInputContainer>
-            <LabelInputContainer border='false' margin='y'>
+            </Container>
+            <Container border='false' margin='y'>
                 <LabelInput>
                     <InputText
                         placeholder='자세한 설명을 추가해 보세요!'
@@ -55,11 +53,13 @@ export const homeTemplate = () => {
                         maxlength={50}
                     ></InputText>
                 </LabelInput>
-            </LabelInputContainer>
-            <LabelInputContainer>
+            </Container>
+            <Container>
                 <Button>링크 복사</Button>
                 <Button>카카오톡 공유</Button>
-            </LabelInputContainer>
-        </HomeTemplate>
+            </Container>
+        </section>
     );
 };
+
+export default HomeTemplate;
