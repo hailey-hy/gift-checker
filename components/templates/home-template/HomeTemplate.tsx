@@ -8,7 +8,7 @@ import GridPaper from '@atoms/gridPaper/GridPaper';
 import Calendar from '@atoms/calendar/Calendar';
 import InputTime from '@atoms/input-time/InputTime';
 import Button from '@atoms/button/Button';
-import LabelInputContainer from '@organisms/label-input-container/LabelInputContainer';
+import LabelInputContainer from '@organisms/label-input-container/label-input-container';
 import GridContainer from '@organisms/grid-container/GridContainer';
 
 export type HomeTemplateProps = {
