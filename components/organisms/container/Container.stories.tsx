@@ -3,6 +3,7 @@ import Label from '@atoms/label/Label';
 import Container from './Container';
 import InputText from '@atoms/input-text/InputText';
 import InputTime from '@atoms/input-time/InputTime';
+import LabelsOnly from '@molecules/labels-only/LabelsOnly';
 
 export default {
     title: 'Design Systems/Organisms/Container',
@@ -47,6 +48,25 @@ export const TimePlaceContainer = () => {
                 <Label>장소</Label>
                 <InputText placeholder='우리집' size='medium' maxlength={25}></InputText>
             </LabelInput>
+        </Container>
+    );
+};
+
+export const LabelCommentsContainer = () => {
+    return (
+        <Container border='true' background='white'>
+            <LabelsOnly display='gridTwo' border='false'>
+                <Label size='small' bold='true'>
+                    이름
+                </Label>
+                <Label size='small'>10/23 15:00</Label>
+            </LabelsOnly>
+            <LabelsOnly display='gridTwo' border='false'>
+                <Label size='small' bold='true'>
+                    선물
+                </Label>
+                <Label size='small'>자세한 설명</Label>
+            </LabelsOnly>
         </Container>
     );
 };

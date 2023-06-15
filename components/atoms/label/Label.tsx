@@ -2,6 +2,7 @@ export type LabelProps = {
     children: React.ReactNode;
     size: 'small' | 'medium' | 'large';
     bold: 'true' | 'false';
+    align: 'false' | 'end';
 };
 
 const sizes = {
@@ -15,13 +16,19 @@ const bolds = {
     false: ' ',
 };
 
-const Label = ({ children, size, bold }: LabelProps) => {
-    const style = '' + sizes[size] + bolds[bold];
+const aligns = {
+    false: '',
+    end: 'text-end',
+};
+
+const Label = ({ children, size, bold, align }: LabelProps) => {
+    const style = '' + sizes[size] + bolds[bold] + aligns[align];
     return <p className={style}>{children}</p>;
 };
 
 Label.defaultProps = {
     size: 'small',
     bold: 'false',
+    align: 'false',
 };
 export default Label;
