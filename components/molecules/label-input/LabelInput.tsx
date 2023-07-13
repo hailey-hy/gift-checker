@@ -8,7 +8,7 @@ export type LabelInputProps = {
 
 const displays = {
     flex: 'flex flex-row items-center gap-2 w-fit m-auto ',
-    grid: 'grid w-[280px] xs:w-[380px] justify-center gap-2 pb-2 sm:w-[630px] sm:grid-cols-custom sm:gap-8 ',
+    grid: 'grid w-[280px] xs:w-[370px] justify-center gap-2 pb-2 sm:w-[630px] sm:grid-cols-custom sm:gap-8 ',
 };
 
 const backgrounds = {

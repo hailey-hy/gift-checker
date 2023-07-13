@@ -3,8 +3,9 @@ export type ContainerProps = {
     border: 'true' | 'false' | 'bottom';
     margin: 'false' | 'y';
     background: 'false' | 'white';
-    width: 'false' | 'comment';
+    width: 'false' | 'comments' | 'comment';
     height: 'false' | 'comments' | 'comment';
+    padding: 'false' | 'y';
 };
 
 const borders = {
@@ -25,23 +26,38 @@ const backgrounds = {
 
 const widths = {
     false: '',
-    comment: 'w-[280px] xs:w-[380px] sm:w-[630px] m-3 ',
+    comments: 'w-[280px] xs:w-[340px] sm:w-[480px] ',
+    comment: 'w-[240px] xs:w-[340px] sm:w-[460px] ',
 };
 
 const heights = {
     false: '',
-    comments: 'max-h-[630px] min-h-[320px]',
-    comment: 'h-fit',
+    comments: 'max-h-[630px] min-h-[320px] m-auto itmes-start ',
+    comment: 'h-[66px] sm:h-[90px]',
 };
 
-const Container = ({ children, border, margin, background, width, height }: ContainerProps) => {
+const paddings = {
+    false: '',
+    y: 'py-4 ',
+};
+
+const Container = ({
+    children,
+    border,
+    margin,
+    background,
+    width,
+    height,
+    padding,
+}: ContainerProps) => {
     const style =
         'flex flex-row flex-wrap justify-center gap-3 p-1 w-fit m-auto sm:w-[630px] sm:p-4 ' +
         borders[border] +
         margins[margin] +
         backgrounds[background] +
         widths[width] +
-        heights[height];
+        heights[height] +
+        paddings[padding];
     return <article className={style}>{children}</article>;
 };
 
@@ -51,6 +67,7 @@ Container.defaultProps = {
     background: 'false',
     width: 'false',
     height: 'false',
+    padding: 'false',
 };
 
 export default Container;
