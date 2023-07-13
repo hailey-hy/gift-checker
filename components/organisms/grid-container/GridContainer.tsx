@@ -10,7 +10,7 @@ const sizes = {
 
 const GridContainer = ({ children, size }: GridContainerProps) => {
     const style =
-        'box-border xs:w-fit sm:w-[550px] overflow-scroll justify-center m-auto mt-4 ' +
+        'box-border h-fit sm:w-[550px] overflow-scroll justify-center sm:m-auto mt-4 max-h-[630px] min-h-[320px] ' +
         sizes[size];
     return <article className={style}>{children}</article>;
 };
