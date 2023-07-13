@@ -11,16 +11,12 @@ import Button from '@atoms/button/Button';
 import GridContainer from '@organisms/grid-container/GridContainer';
 import Container from '@organisms/container/Container';
 
-export type HomeTemplateProps = {
-    children: React.ReactNode;
-};
-
 const HomeTemplate = () => {
     return (
         <section className='overflow-overlay justify-center'>
             <Background></Background>
             <Headline></Headline>
-            <Container border='true'>
+            <Container border='true' margin='y'>
                 <LabelInput>
                     <Label>주인공</Label>
                     <InputText placeholder='이름' size='medium' maxlength={25}></InputText>
