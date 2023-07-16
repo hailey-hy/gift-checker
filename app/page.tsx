@@ -1,4 +1,5 @@
 import HomeTemplate from '@templates/home-template/HomeTemplate';
+import './globals.css';
 
 const Home = () => {
     return (
