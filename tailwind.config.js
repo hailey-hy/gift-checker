@@ -14,6 +14,9 @@ module.exports = {
     },
     screens: {
       'xs': '340px'
+    },
+    fontFamily: {
+      chosun: 'var(--font-Chosun)'
     }
   },
   plugins: [],

@@ -1,4 +1,7 @@
 import './globals.css';
+import localFont from 'next/font/local';
+
+const myFont = localFont({ src: './fonts/ChosunGu.ttf', variable: '--font-Chosun' });
 
 export const metadata = {
     title: 'gift-checker',
@@ -7,9 +10,8 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang='en'>
-            {/* <body className={inter.className}>{children}</body> */}
-            <body>{children}</body>
+        <html lang='ko' className={myFont.className}>
+            <body className='font-chosun'>{children}</body>
         </html>
     );
 }
